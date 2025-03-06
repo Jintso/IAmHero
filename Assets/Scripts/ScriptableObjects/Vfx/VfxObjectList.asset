@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb15b0e2cb3d7334c927f98dc21530e6, type: 3}
+  m_Name: VfxObjectList
+  m_EditorClassIdentifier: 
+  Healing: {fileID: 11400000, guid: 6aa328021e97e6444b1660ba5caad4fd, type: 2}
+  LevelUp: {fileID: 11400000, guid: 7aad8b7c5aef4dc42b5a908ed7131db8, type: 2}
+  SwordTrail: {fileID: 11400000, guid: 51ab809694d14ba4eb30d728569f553e, type: 2}

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cadfba1b399244d4bb8e3eacf93c3c7c, type: 3}
+  m_Name: MusicThemeRefObject
+  m_EditorClassIdentifier: 
+  MenuTheme: {fileID: 8300000, guid: 7ecb344deac6e11469d68064682effba, type: 3}
+  GameplayTheme:
+  - {fileID: 8300000, guid: fa17bf00813373e4a894da2728f454d4, type: 3}
+  - {fileID: 8300000, guid: 353a1990562123748b8494d389f7bb02, type: 3}
+  EndingTheme:
+  - {fileID: 8300000, guid: 659aa9f437ff0f74982f91afe23385ee, type: 3}
+  - {fileID: 8300000, guid: 5a5a48254b2f80844ae2e75c82efe58a, type: 3}
+  BossTheme: {fileID: 8300000, guid: 209b38da8fc5aaa41bf1477b0f53e858, type: 3}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c36182e6c18edf4baeb579bc2bb4f2b, type: 3}
+  m_Name: SmallCoinObject
+  m_EditorClassIdentifier: 
+  DropChance: 1
+  ExperienceAmount: 10
+  ItemName: Emerald
+  MinEnemyDropLevel: 1
+  Prefab: {fileID: 7862382138624782608, guid: 38a28381c13ed334e9a47feb9dc151d6, type: 3}
+  Sprite: {fileID: 21300000, guid: 63780fa5784475a43b87ec533ef032ea, type: 3}
