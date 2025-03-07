@@ -28,3 +28,6 @@ The assets are free and from the market place, all imported via the package mana
 
 ## Changelog
 * Added base ability class with a test spinning ability, can be tested in game with space button
+
+## License
+Standard Unity Asset Store EULA
