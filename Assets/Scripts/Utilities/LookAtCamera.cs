@@ -1,24 +1,35 @@
-using UnityEngine;
-
-public class LookAtCamera : MonoBehaviour
+namespace Utilities
 {
-    [SerializeField] private bool isInverted = false;
-    private Camera _mainCamera;
+    using UnityEngine;
 
-    private void Start()
+    public class LookAtCamera : MonoBehaviour
     {
-        _mainCamera = Camera.main;
-    }
+        [SerializeField] private bool isInverted;
+        [SerializeField] private bool isYLocked;
 
-    private void LateUpdate()
-    {
-        if (isInverted)
-        { 
-            transform.forward = -_mainCamera.transform.forward;
-        }
-        else
+        private Camera _mainCamera;
+
+        private void Start()
         {
-            transform.forward = _mainCamera.transform.forward;
+            _mainCamera = Camera.main;
+        }
+
+        private void LateUpdate()
+        {
+            var cameraForward = _mainCamera.transform.forward;
+            if (isYLocked)
+            {
+                cameraForward.y = 0;
+            }
+
+            if (isInverted)
+            {
+                transform.forward = -cameraForward;
+            }
+            else
+            {
+                transform.forward = cameraForward;
+            }
         }
     }
 }

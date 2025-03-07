@@ -8,17 +8,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6812854461332250472, guid: 99fe44a80c8772f4c99f4e8ede6eb0ec, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6812854461332250472, guid: 99fe44a80c8772f4c99f4e8ede6eb0ec, type: 3}
+    - target: {fileID: 4489665381790646661, guid: 99fe44a80c8772f4c99f4e8ede6eb0ec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6812854461332250472, guid: 99fe44a80c8772f4c99f4e8ede6eb0ec, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6812854461332250472, guid: 99fe44a80c8772f4c99f4e8ede6eb0ec, type: 3}
       propertyPath: m_LocalRotation.w
@@ -58,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 303705e9193de7f42b78ac32dc68f538, type: 2}
     - target: {fileID: 7929930628394605088, guid: 99fe44a80c8772f4c99f4e8ede6eb0ec, type: 3}
       propertyPath: m_Name
-      value: LargeCoint
+      value: LargeCoin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

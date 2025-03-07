@@ -1,26 +1,22 @@
-using DG.Tweening;
-using Units;
-using UnityEngine;
-
 namespace Abilities
 {
+    using Units;
+    using UnityEngine;
+
     public class SpinningAbility : BaseAbility
     {
         private const float Offset = 1f;
 
         private void Start()
         {
-            transform.position = PlayerUnit.Instance.transform.position;
-            transform.DOMove(PlayerUnit.Instance.transform.position + Offset * Vector3.right, .25f)
-                .SetEase(Ease.OutBounce);
             transform.parent = PlayerUnit.Instance.transform;
-            // transform.position = new Vector3(transform.position.x + Offset, transform.position.y, transform.position.z);
-            // transform.DOMove(transform.position + Offset * Vector3.right, .25f).SetEase(Ease.OutBounce);
+            transform.position = PlayerUnit.Instance.transform.position + Offset * Vector3.right;
         }
 
         private void Update()
         {
             transform.RotateAround(transform.parent.position, Vector3.up, abilityObjectData.Speed * Time.deltaTime);
+            transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, 0f);
         }
     }
 }

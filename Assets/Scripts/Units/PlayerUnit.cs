@@ -1,11 +1,10 @@
-using System;
-using Managers;
-using Systems;
-using UnityEngine;
-
 namespace Units
 {
-    using Physics = Physics;
+    using System;
+    using Managers;
+    using Systems;
+    using UnityEngine;
+    using Physics = UnityEngine.Physics;
 
     public class PlayerUnit : UnitBase
     {
@@ -118,7 +117,7 @@ namespace Units
             var inputVector = GameInputManager.Instance.GetMovementVectorNormalized();
             const float cameraTiltAmount = 20f;
             var moveYOrthographicCorrection = inputVector.y / Math.Cos(cameraTiltAmount);
-            var moveDirection = new Vector3(inputVector.x, 0, (float)moveYOrthographicCorrection);
+            var moveDirection = new Vector3(inputVector.x, 0, inputVector.y);
             transform.position += moveDirection * (unitObjectData.MoveSpeed * Time.deltaTime);
 
             IsWalking = moveDirection != Vector3.zero;
