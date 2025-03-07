@@ -27,4 +27,4 @@ The assets are free and from the market place, all imported via the package mana
   * Currently adds extra work to not make everything "elliptical"
 
 ## Changelog
-* Added base ability class with a test spinning ability, can be tested in game with space
+* Added base ability class with a test spinning ability, can be tested in game with space button
