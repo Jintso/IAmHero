@@ -10,9 +10,11 @@ namespace Systems
         [SerializeField] private UnitObjectData unitObjectData;
         private float _healthCurrent;
         private float _healthMax;
+        private bool _isDead;
 
         private void Awake()
         {
+            _isDead = false;
             _healthCurrent = unitObjectData.Health;
             _healthMax = unitObjectData.Health;
         }
@@ -25,6 +27,11 @@ namespace Systems
             return _healthCurrent;
         }
 
+        public bool IsDead()
+        {
+            return _isDead;
+        }
+
         public void TakeDamage(float damage)
         {
             _healthCurrent -= damage;
@@ -32,6 +39,7 @@ namespace Systems
             if (_healthCurrent <= 0)
             {
                 _healthCurrent = 0f;
+                _isDead = true;
                 OnDeath?.Invoke(this, EventArgs.Empty);
             }
 
@@ -46,10 +54,7 @@ namespace Systems
         {
             _healthCurrent += heal;
 
-            if (_healthCurrent >= _healthMax)
-            {
-                _healthCurrent = _healthMax;
-            }
+            if (_healthCurrent >= _healthMax) _healthCurrent = _healthMax;
 
             OnHealthChanged?.Invoke(this,
                 new HealthChangedArgs { CurrentHealth = _healthCurrent, ChangeValue = heal, MaxHealth = _healthMax });

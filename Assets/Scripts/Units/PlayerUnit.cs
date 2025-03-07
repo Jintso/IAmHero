@@ -1,17 +1,18 @@
+using System;
+using Managers;
+using Systems;
+using UnityEngine;
+
 namespace Units
 {
-    using System;
-    using Managers;
-    using RotaryHeart.Lib.PhysicsExtension;
-    using Systems;
-    using UnityEngine;
-    using Physics = UnityEngine.Physics;
+    using Physics = Physics;
 
     public class PlayerUnit : UnitBase
     {
         public const string TagName = "Player";
 
         [SerializeField] private bool hasAutoAttack;
+        [SerializeField] private GameObject testAbilityObject;
 
         private LevelSystem _levelSystem;
 
@@ -47,6 +48,11 @@ namespace Units
             {
                 WorldManager.Instance.PlayerIsDead();
                 return;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Instantiate(testAbilityObject, Vector3.zero, Quaternion.identity);
             }
 
             HandleMovement();

@@ -358,6 +358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitObjectData: {fileID: 11400000, guid: a2fd6334133f4cf448da2c005090b5dc, type: 2}
   hasAutoAttack: 0
+  testAbilityObject: {fileID: 4052712197380525149, guid: ed74116429ade5d48945abd301ffa272, type: 3}
 --- !u!114 &7977602582967377546
 MonoBehaviour:
   m_ObjectHideFlags: 0

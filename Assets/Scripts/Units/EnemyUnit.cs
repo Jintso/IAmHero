@@ -1,13 +1,12 @@
+using System;
+using DG.Tweening;
+using Managers;
 using Systems;
+using UnityEngine;
+using UnityEngine.Events;
 
 namespace Units
 {
-    using System;
-    using DG.Tweening;
-    using Managers;
-    using UnityEngine;
-    using UnityEngine.Events;
-
     public class EnemyUnit : UnitBase
     {
         private void Start()
@@ -52,14 +51,14 @@ namespace Units
                 return;
             }
 
-            if (other.TryGetComponent<HealthSystem>(out var unitHealth) == false)
+            if (other.TryGetComponent<HealthSystem>(out var unitHealthSystem) == false)
             {
                 return;
             }
 
             if (CanAttack())
             {
-                HandleAttack(unitHealth);
+                HandleAttack(unitHealthSystem);
             }
         }
 
