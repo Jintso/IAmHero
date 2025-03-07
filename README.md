@@ -8,8 +8,8 @@ The focus of the project is towards gameplay and architecture, art and vfx is im
 This small game is a horde survivor game with minor rpg like element, including levels and abilities. Inspired by vampire survivor and similar titels.
 
 #### Naming convention
-* System - Attach dynamic to gameobjects
-* Manager - Persistent world gameobjects
+* System - Attaches to dynamic gameobjects
+* Manager - Attaches to persistent world gameobjects
 * DataObject - Scriptable Objects
 * UI - Game Interface related
 
