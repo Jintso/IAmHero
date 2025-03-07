@@ -23,8 +23,7 @@ The assets are free and from the market place, all imported via the package mana
 * Limited time spent per day since I have a 0 year old daughter :)
 
 ## Todo
-* Refactor tilted orthogonal view to straight from top view
-  * Currently adds extra work to not make everything "elliptical"
+* Ability selection at level up
 
 ## Changelog
 * 2025-03-07
