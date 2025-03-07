@@ -21,3 +21,10 @@ The assets are free and from the market place, all imported via the package mana
 * Had to remove a non free package for animations and characters, character animations are missing for now.
 * Project started on the 1 Feb 2025
 * Limited time spent per day since I have a 0 year old daughter :)
+
+## Todo
+* Refactor tilted orthogonal view to straight from top view
+  * Currently adds extra work to not make everything "elliptical"
+
+## Changelog
+* Added base ability class with a test spinning ability, can be tested in game with space
