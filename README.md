@@ -23,12 +23,14 @@ The assets are free and from the market place, all imported via the package mana
 * Limited time spent per day since I have a 0 year old daughter :)
 
 ## Todo
-* Ability selection at level up
+* Give player selected ability from the UI
 
 ## Changelog
 * 2025-03-07
   * Added base ability class with a test spinning ability, can be tested in game with space button
   * Refactored to top down view
+* 2025-03-08
+  * Added ability manager and UI
 
 ## License
 Standard Unity Asset Store EULA
