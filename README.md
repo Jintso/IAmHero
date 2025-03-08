@@ -8,8 +8,8 @@ The focus of the project is towards gameplay and architecture, art and vfx is im
 This small game is a horde survivor game with minor rpg like element, including levels and abilities. Inspired by vampire survivor and similar titels.
 
 #### Naming convention
-* System - Attach dynamic to gameobjects
-* Manager - Persistent world gameobjects
+* System - Attaches to dynamic gameobjects
+* Manager - Attaches to persistent world gameobjects
 * DataObject - Scriptable Objects
 * UI - Game Interface related
 
@@ -23,8 +23,7 @@ The assets are free and from the market place, all imported via the package mana
 * Limited time spent per day since I have a 0 year old daughter :)
 
 ## Todo
-* Refactor tilted orthogonal view to straight from top view
-  * Currently adds extra work to not make everything "elliptical"
+* Ability selection at level up
 
 ## Changelog
 * 2025-03-07
