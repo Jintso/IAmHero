@@ -5,7 +5,7 @@ namespace Managers
 
     public class WorldManager : MonoBehaviour
     {
-        private const float LevelIncreaseInterval = 60f;
+        private const float LevelIncreaseTimeInterval = 60f;
 
         private State _gameState;
         private float _gameTimer;
@@ -32,14 +32,13 @@ namespace Managers
         private void Start()
         {
             _gameTimer = 0f;
-            _levelIncreaseTime = LevelIncreaseInterval;
+            _levelIncreaseTime = LevelIncreaseTimeInterval;
         }
 
         private void Update()
         {
             if (_gameState != _lastGameState)
             {
-                Debug.Log($"Game state changed to [{_gameState}]", this);
                 BroadcastStateSwitch();
             }
 
@@ -95,7 +94,7 @@ namespace Managers
         public void StartGame()
         {
             _gameTimer = 0f;
-            _levelIncreaseTime = LevelIncreaseInterval;
+            _levelIncreaseTime = LevelIncreaseTimeInterval;
             _gameState = State.Gameplay;
         }
 
@@ -110,7 +109,7 @@ namespace Managers
             if (_levelIncreaseTime <= _gameTimer)
             {
                 EnemyManager.Instance.SetCurrentEnemyType((int)_gameTimer);
-                _levelIncreaseTime = _gameTimer + LevelIncreaseInterval;
+                _levelIncreaseTime = _gameTimer + LevelIncreaseTimeInterval;
             }
         }
 
@@ -143,7 +142,7 @@ namespace Managers
             MainMenu,
             Gameplay,
             GameOver,
-            None,
+            None
         }
     }
 }
