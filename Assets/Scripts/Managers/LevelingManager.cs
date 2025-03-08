@@ -5,7 +5,7 @@ namespace Managers
 
     public class LevelingManager : MonoBehaviour
     {
-        public static LevelingManager Instance;
+        public static LevelingManager Instance { get; private set; }
 
         public void Awake()
         {
